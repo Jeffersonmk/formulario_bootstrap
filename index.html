@@ -8,22 +8,24 @@
     <title>Formulário Bootstrap</title>
 </head>
 <body>
-    <div class="row">
-        <div class="col">
-            <h2>Formulário de Contato</h2>
-            <form>
-                <label class="form-label"for="nome">Nome:</label>
-                <input class="form-control" type="text" id="nome"/>
-                <label class="form-label" for="email">Email:</label>
-                <input class="form-control" type="email" id="email"/>
-                <label class="form-label" for="telefone">Telefone:</label>
-                <input class="form-control" type="tel" id="telefone"/>
-                <div class="form-check form-switch">
-                    <label class="form-check-label" for="aceito-termos">Li e concordo com os termos</label>
-                    <input class="form-check-input" type="checkbox" id="aceito-termos">
-                </div>
-                <button class="btn btn-success">Enviar</button>
-            </form>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2>Formulário de Contato</h2>
+                <form id="contato-form">
+                    <label class="form-label"for="nome">Nome:</label>
+                    <input class="form-control" type="text" id="nome" name="nome" placeholder="Digite seu nome"/>
+                    <label class="form-label" for="email" >Email:</label>
+                    <input class="form-control" type="email" id="email" name="email" placeholder="Digite seu e-mail"/>
+                    <label class="form-label" for="telefone">Telefone:</label>
+                    <input class="form-control" type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone"/>
+                    <div class="form-check form-switch">
+                        <label class="form-check-label" for="aceito-termos">Li e concordo com os termos</label>
+                        <input class="form-check-input" type="checkbox" id="aceito-termos" name="aceito-termos">
+                    </div>
+                    <button class="btn btn-success">Enviar</button>
+                </form>
+            </div>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
